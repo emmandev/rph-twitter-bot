@@ -1,0 +1,22 @@
+{
+  "name": "rph-twitter-bot",
+  "version": "1.0.0",
+  "description": "Gathers content from r/ph to post in Twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emmandev/rph-twitter-bot.git"
+  },
+  "author": "Emmanuel Tierra",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "snoostorm": "0.0.5",
+    "snoowrap": "^1.14.1",
+    "striptags": "^3.0.1",
+    "twit": "^2.2.9"
+  }
+}
