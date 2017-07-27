@@ -43,8 +43,7 @@ const t = new Twit({
 
 // Configure options for stream
 const streamOpts = {
-    subreddit: 'testingground4bots',
-    // subreddit: 'philippines',
+    subreddit: 'philippines',
     results: 15
 };
 
