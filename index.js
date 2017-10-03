@@ -79,7 +79,7 @@ comments.on('comment', (comment) => {
             .fetch()
             .then((parentComment) => {
 
-                // tweet it
+                // Tweet it
                 t.post(
                     'statuses/update',
                     { 
