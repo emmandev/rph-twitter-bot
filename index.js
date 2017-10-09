@@ -81,7 +81,7 @@ comments.on('comment', (comment) => {
                     (error, data, response) => { 
                         if( !error ){
                             // Reply to user
-                            comment.reply( '[Tweeted!](https://twitter.com/statuses/' + data.id_str + ')' );
+                            comment.reply( reddit.successTweetReply( data.id_str ) );
                         }
                         else {
                             console.log(error);
