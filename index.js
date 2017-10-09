@@ -56,24 +56,11 @@ const comments = client.CommentStream(streamOpts);
 comments.on('comment', (comment) => {
     /*
      * Catches the phrase 'phlease tweet this!'
-     *
-     * (Coming soon?)
-     * Optional query /^n/ where:
-     *      n   =>   number of ancestors to include in the tweet (defaults to 1, which is the parent)
-     * example: 'phlease tweet this! ^2'
      */
     var regex = /phlease tweet this!\s*(\^{1}\d)?/gi,
         match = regex.exec( comment.body );
 
     if( match ){
-
-        // coming soon
-        if( match.indexOf( '^' ) !== -1 ){
-            var ancestors = match.split('^');
-            ancestors = ancestors[1];
-        }
-        // coming soon
-
         // get parent comment
         r.getComment(comment.parent_id)
             .fetch()
