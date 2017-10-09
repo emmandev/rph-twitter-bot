@@ -23,6 +23,11 @@ var redditApi = class RedditApi {
 
         return '';
     }
+
+    // successful tweet reply
+    successTweetReply(tweet_id){
+        return '[Tweeted!](https://twitter.com/statuses/' + tweet_id + ')';
+    }
 };
 
 module.exports = redditApi;
