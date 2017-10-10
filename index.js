@@ -19,7 +19,7 @@ const Twitter  = require('./twitter');
 
 const striptags = require('striptags');
 
-// Custom api
+// Custom API
 const reddit = new Reddit();
 const twitter = new Twitter();
 
@@ -66,7 +66,7 @@ comments.on('comment', (comment) => {
             .fetch()
             .then((parentComment) => {
 
-                // tweet it
+                // Tweet it
                 t.post(
                     'statuses/update',
                     { 
